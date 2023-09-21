@@ -15,6 +15,7 @@ This is a solution to the [HNG 10 - FrontEnd - Stage 3 Project - Drag and Drop I
   - [Useful resources](#useful-resources)
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
+  - [User Instructions](#userinstructions)
 
 ## Overview
 
@@ -118,3 +119,8 @@ ChatGPT
 ## Acknowledgments
 
 Solomon Ekrebe and Ekpa Ntan thanks for the guidance.
+
+## User Instructions
+
+Login details are displayed on landing page.
+Signout functionality not added, so to sign out, on Google Chrome: Right Click -> Application -> Cookies -> Right Click and clear site cookies
