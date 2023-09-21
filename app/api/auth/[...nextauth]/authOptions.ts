@@ -1,3 +1,6 @@
+/*
+the essence of this code is to provide a configuration for implementing email and password-based authentication using NextAuth.js in your Next.js application. It defines how authentication should work and what the expected credentials are.
+*/
 import { NextAuthOptions } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 

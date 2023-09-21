@@ -1,5 +1,5 @@
 /*
-the 
+The essence of the Header component to the codebase in which it is found is to provide a consistent way to render the header of the application on all pages. This makes the application more user-friendly and easier to maintain.
 */
 import Image from "next/image";
 

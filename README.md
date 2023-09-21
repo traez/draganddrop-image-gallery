@@ -99,6 +99,7 @@ Ensure that the code is well-documented and organized.
 - Implement skeleton loader or a loading spinner for fetch operations loading state. But I ended up not activating feature as project instructions changed.  
 - Use of ChatGPT to create boilerplate code and shorten delivery time.  
 - Custom Login Authentication using NextAuth and FireBase. This skills however still needs perfection.  
+- Use of dndkit library to correct HTML Drag and Drop API shortfalls on mobile.
 
 ### Continued development
 

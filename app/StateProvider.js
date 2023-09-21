@@ -1,15 +1,14 @@
 /*
-The 
+The essence of the StateProvider component to the codebase in which it is found is to provide a central place to manage the application's state. This makes it easy for all of the application's components to access the state without having to worry about how it is being managed.
 */
 "use client";
-import { createContext, useState, useContext, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import { galleryData } from "../app/libraries/data";
 
 export const StateContext = createContext();
 
 export default function StateProvider({ children }) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [draggedItem, setDraggedItem] = useState(null);
   const [dataToRender, setDataToRender] = useState(galleryData);
   const isSearchActive = searchTerm.trim() !== "";
 
@@ -25,44 +24,13 @@ export default function StateProvider({ children }) {
     }
   }, [searchTerm, isSearchActive]);
 
-  function handleDragStart(event, index) {
-    setDraggedItem(index);
-  }
-
-  function handleDragOver(event, index) {
-    event.preventDefault();
-    event.target.classList.add("dragged-over");
-    setTimeout(() => {
-      event.target.classList.remove("dragged-over");
-    }, 3000);
-  }
-
-  function handleDrop(event, index) {
-    event.preventDefault();
-    const updatedData = [...dataToRender];
-    const [draggedItemData] = updatedData.splice(draggedItem, 1);
-    updatedData.splice(index, 0, draggedItemData);
-    setDataToRender(updatedData);
-    setDraggedItem(null);
-  }
-
-  function handleDragLeave(event) {
-    event.target.classList.remove("dragged-over");
-  }
-
   return (
     <StateContext.Provider
       value={{
         searchTerm,
         setSearchTerm,
-        draggedItem,
-        setDraggedItem,
         dataToRender,
         setDataToRender,
-        handleDragStart,
-        handleDragOver,
-        handleDrop,
-        handleDragLeave,
       }}
     >
       {children}
