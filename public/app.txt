@@ -1,0 +1,45 @@
+------------------------------------------------------------------------------------------Main
+------------------------------------------------------------------------Header 1fr
+---------------------------------------------------------Nav
+--------------------------------------------H1 Name
+--------------------------------------------Aside 
+-----------------------------------Button Home
+---------------------------------------------------------Menu Input
+------------------------------------------------------------------------Section Auto
+---------------------------------------------------------Article X10
+------------------------------------------------------------------------Footer 1fr
+---------------------------------------------------------Div X4 DivImg
+---------------------------------------------------------Small
+----------------------------------------------
+HNG firebase
+https://github.com/RB-Isiaq/gallery
+https://gallery-rb-isiaq.vercel.app/
+
+HNG NextAuth
+https://github.com/Bobbyjsx/stage-3
+https://stage-3-wine.vercel.app/
+
+Google Search
+Next.js Next-Auth Authentication Credentials Provider Client Component
+
+Good Tutorial: https://nextjsdev.com/user-authentication-in-nextjs-13-app-using-nextauth/
+Live: https://nextauth-nextjs13.vercel.app/
+Source: https://github.com/raiv200/NextAuth-Next.js-13
+----------------------------------------------
+Image Grid
+image search filter (continent)
+Drag and Drop
+Authentication Username Password error
+----------------------------------------------
+-Things learnt:
+-Deliver Timely
+-implementing skeleton loader or a loading spinner for fetch operations loading state.
+-Use ChatGPT for boilerplate HTML code
+-Custome Login Authentication using NextAuth and FireBase. Still needs perfection
+----------------------------------------------
+----------------------------------------------
+----------------------------------------------
+----------------------------------------------
+
+
+

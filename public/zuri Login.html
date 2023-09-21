@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Self-Taught Bootcamp</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-react-black.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="zuri.css" />
+  </head>
+  <!-- header -->
+  <body>
+    <main>
+      <header>
+        <h1>Drag and Drop Image Gallery</h1>
+        <div class="dragdrop-container">
+          <img src="/public/images/dragdrop.png" alt="" class="dragdrop" />
+        </div>
+      </header>
+
+      <!-- section -->
+      <section class="section-login">
+        <div class="container">
+          <div class="header">Kindly Login to access App</div>
+          <div class="main-section">
+            <form>
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="UserName : user@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password: 1Password"
+                />
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn-login">Login</button>
+              </div>
+              <div class="form-group error-message">
+                <!-- Display error messages here -->
+                kindly use given username and password
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <small>
+          <i>©2023 Trae Zeeofor</i>
+          <a
+            href="https://github.com/traez/drag-and-drop-image-gallery"
+            target="_blank"
+            class=""
+            >Source Code</a
+          >
+        </small>
+      </footer>
+    </main>
+
+    <script src="zuri.js"></script>
+  </body>
+</html>

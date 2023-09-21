@@ -1,0 +1,2 @@
+getlinked-pre-hackathon-coding-challenge
+npx create-next-app getlinked-prehackathon-coding-challenge

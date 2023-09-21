@@ -1,34 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HNG 10 - FrontEnd - Stage 3 Project - Drag and Drop Image Gallery
 
-## Getting Started
+This is a solution to the [HNG 10 - FrontEnd - Stage 3 Project - Drag and Drop Image Gallery](https://hngx.zuriboard.com/). The HNG Internship is an ambitious attempt to change the way education is done in Africa. It is the bridge between learning to code and becoming the best in the world..
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### The Challenge/User Stories
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Objective: You will implement a fully functional and responsive image gallery that showcases a collection of images in a visually appealing way.  
 
-## Learn More
+A user should be able to Login to the gallery page. Authenticated users should be able to use the Drag-and-Drop feature, they should be able to select and drag images, effortlessly rearranging them within the gallery.  
 
-To learn more about Next.js, take a look at the following resources:
+- Simple Authentication: 
+This means login with this email and password:
+UserName: user@example.com
+Password: 1Password
+The authentication form fields should have proper validation setup, with proper error messages. You do not need to implement this on the backend yourself, you could use solutions like NextAuth, Auth0 or Clerk, firebase for Auth or add etc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Image Display:
+Display a grid layout that showcases a collection of images presented in a visually appealing manner with consistent spacing and sizing, add a tag to each image.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Loading state:
+The page should have a loading state for when images are not ready for display, display a skeleton loader or a loading spinner when loading is true
+P/S: Once again, mentors are kind. You may use static images, you don't need to upload it. Drag and drop needs to work for the rearrangement though. You're welcome
 
-## Deploy on Vercel
+- Search Functionality:
+You should have a search field that filters the image list based on the tags added to the images.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Drag-and-Drop:
+Implement the ability for users to drag and drop images within the gallery.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- User-friendly Feedback:
+Incorporate smooth animations and visual cues that provide feedback during drag and drop interactions.
+
+- Responsive Design:
+Ensure that the gallery is responsive and functions seamlessly on different devices, including mobile phones, tablets, and desktops.
+
+- Design Flexibility:
+While adhering to the above requirements, you have the creative freedom to come up with a unique and appealing design.
+
+- Acceptance Criteria:
+Functional Authentication: A fully functional authentication process.
+
+- Drag-and-Drop Feature: A fully functional drag and drop feature must be implemented.
+
+- Responsiveness: Design must be responsive across various desktop  screens, including mobile and tablet screens.
+
+- User Experience: Design must be intuitive, appealing, and encourage easy navigation and operation (i.e., NO LAGGING).
+
+- Image Display: All Images should have consistent spacing and sizing.
+
+- Submission Mode
+Host your frontend application on a platform of your choice (e.g., GitHub Pages, Netlify).
+
+- Provide clear instructions on how to run your project locally in your README.md file.
+Ensure that the code is well-documented and organized.
+
+### Screenshot
+
+![](/public/images/screenshot-desktop.png)
+
+### Links
+
+- Solution URL: [https://github.com/traez/draganddrop-image-gallery](https://github.com/traez/draganddrop-image-gallery)
+- Live Site URL: [https://draganddrop-image-gallery-traez.vercel.app](https://draganddrop-image-gallery-traez.vercel.app)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Tailwind CSS (NOT USED!!!)
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- NextAuth (Authentication)
+
+### What I learned
+
+- Deliver projects Timely like in real work scenarios.  
+- Implement skeleton loader or a loading spinner for fetch operations loading state. But I ended up not activating feature as project instructions changed.  
+- Use of ChatGPT to create boilerplate code and shorten delivery time.  
+- Custom Login Authentication using NextAuth and FireBase. This skills however still needs perfection.  
+
+### Continued development
+
+- More HNG 10 Projects, TypeScript, Open Source and Technical Writing, Edgi Projects.
+
+### Useful resources
+
+Stackoverflow  
+YouTube  
+Google  
+ChatGPT
+
+## Author
+
+- Website - [Trae Zeeofor](https://github.com/traez)
+- Twitter - [@trae_z](https://twitter.com/trae_z)
+
+## Acknowledgments
+
+Solomon Ekrebe and Ekpa Ntan thanks for the guidance.

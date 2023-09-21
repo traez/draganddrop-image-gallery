@@ -25,7 +25,7 @@ body {
 main {
   width: 100%;
   min-height: 750px;
-  padding: 0.4rem;
+  padding: 0.5rem;
   display: grid;
   grid-template: 1fr minmax(545px, auto) 1fr / auto;
   grid-template-areas:
@@ -92,30 +92,26 @@ h1 {
 .section-gallery {
   grid-area: bbb;
   width: 100%;
-  gap: 0.2rem;
-  display: grid;
-  grid-template: 30px minmax(515px, auto) / auto;
-  grid-template-areas:
-    "top"
-    "bottom";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:0.2rem;
 }
 .search-bar {
-  grid-area: top;
   height: 2rem;
   width: 14rem;
   padding: 0.1rem;
-  margin: auto;
 }
 .section-gallery-div {
-  grid-area: bottom;
   width: 100%;
-  height: auto;
+  height:auto;
   padding: 0.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9.3rem, 1fr));
   gap: 0.5rem;
 }
-article {
+article{
   width: 9.3rem;
   height: 9.3rem;
   display: flex;
@@ -123,18 +119,6 @@ article {
   justify-content: space-around;
   align-items: center;
   background-color: hsl(0, 0%, 85%);
-}
-article:hover {
-  cursor: grab;
-}
-.dragged {
-  border: 2px dashed #007bff; /* Add a dashed border to indicate the dragged item */
-  opacity: 0.7; /* Reduce opacity to give a semi-transparent effect */
-  transform: scale(1.05); /* Slightly scale up the dragged item for emphasis */
-  transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
-}
-.dragged-over {
-  border: 2px dashed #007bff; /* Add a dashed border to indicate the drop target */
 }
 .flag-container {
   width: 9.3rem;
@@ -149,15 +133,15 @@ article:hover {
   left: 0;
   border-radius: 5px;
 }
-ul {
+ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0.3rem;
+  width:100%;
+  padding:0.3rem;
 }
-li {
+li{
   list-style: none;
   font-weight: bolder;
 }
