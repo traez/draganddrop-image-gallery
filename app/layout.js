@@ -3,24 +3,25 @@ The essence of the RootLayout component to the codebase in which it is found is 
 In addition, the RootLayout component is responsible for setting the metadata for the application, such as the title and description. This metadata is used by search engines and other applications to display information about the application.
 */
 import "./globals.css";
-import NextAuthSessionProvider from "./sessionProvider";
 import StateProvider from "./StateProvider";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Drag and Drop Image Gallery",
   description: "Created by Trae Zeeofor",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <StateProvider>
         <body>
-          <NextAuthSessionProvider>{children}</NextAuthSessionProvider>
+          <main>
+            <Header />
+            {children}
+            <Footer />
+          </main>
         </body>
       </StateProvider>
     </html>

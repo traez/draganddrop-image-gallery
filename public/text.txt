@@ -1,8 +1,2 @@
-Project deployed, every thing looking sexy.
-Only to test and see that "HTML Drag and Drop API not working on mobile" is a known issue on Stackoverflow.
-Na now i understand why people dey complain.
-Solution appears to be to use TouchEvents or a 3rd party addon like "react-beautiful-dn"
-Kai! Thank God say small time still remain
-
-For authentication i used a crude form of NextAuth. Firebase apparently is easier sef, but time no dey.
-I go perfect both later sha for future projects.
+help refactor code
+if isLoggedIn is true then render  Gallery, otherwise render Login

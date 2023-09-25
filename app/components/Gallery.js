@@ -6,12 +6,7 @@ import Image from "next/image";
 import { useContext } from "react";
 import { StateContext } from "../StateProvider";
 import { closestCenter, DndContext } from "@dnd-kit/core";
-import {
-  arrayMove,
-  SortableContext,
-  useSortable,
-  rectSortingStrategy,
-} from "@dnd-kit/sortable";
+import { arrayMove, SortableContext, useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
 function SortableItem({ dataToRenderx }) {
@@ -45,8 +40,13 @@ function SortableItem({ dataToRenderx }) {
 }
 
 export default function Gallery() {
-  const { searchTerm, setSearchTerm, dataToRender, setDataToRender } =
-    useContext(StateContext);
+  const {
+    searchTerm,
+    setSearchTerm,
+    dataToRender,
+    setDataToRender,
+    handleSignOut,
+  } = useContext(StateContext);
 
   function onDragEnd(event) {
     const { active, over } = event;
@@ -66,23 +66,26 @@ export default function Gallery() {
 
   return (
     <section className="section-gallery">
-      <input
-        type="search"
-        placeholder="Search by Continent"
-        className="search-bar"
-        value={searchTerm}
-        onChange={(e) => {
-          setSearchTerm(e.target.value);
-        }}
-      />
+      <div className="searchbar-button">
+        <input
+          type="search"
+          placeholder="Search by Continent"
+          className="search-bar"
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+          }}
+        />
+        <button onClick={handleSignOut}>Sign Out</button>
+      </div>
       <div className="section-gallery-div">
         <DndContext
           id="unique-dnd-context-id"
           collisionDetection={closestCenter}
           onDragEnd={onDragEnd}
         >
-          <SortableContext items={dataToRender} strategy={rectSortingStrategy}>
-            {dataToRender.map((dataToRenderx, index) => (
+          <SortableContext items={dataToRender}>
+            {dataToRender.map((dataToRenderx) => (
               <SortableItem
                 key={dataToRenderx.id}
                 dataToRenderx={dataToRenderx}

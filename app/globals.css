@@ -87,6 +87,25 @@ h1 {
 /* Section Login ************************/
 .section-login {
   grid-area: bbb;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.post-div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+h4{
+  text-align: center;
+}
+.post-input {
+  width: 250px;
+  height:2rem;
+  padding:0.3rem;
 }
 /* Section Gallery ************************/
 .section-gallery {
@@ -99,12 +118,31 @@ h1 {
     "top"
     "bottom";
 }
-.search-bar {
+.searchbar-button {
   grid-area: top;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.search-bar {
   height: 2rem;
   width: 14rem;
   padding: 0.1rem;
-  margin: auto;
+}
+button {
+  height: 2rem;
+  width: 7rem;
+  padding: 0.1rem;
+  background-color: #1565c0;
+  color: rgb(239, 239, 48);
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #0d47a1;
 }
 .section-gallery-div {
   grid-area: bottom;
@@ -123,6 +161,7 @@ article {
   justify-content: space-around;
   align-items: center;
   background-color: hsl(0, 0%, 85%);
+  touch-action: manipulation;
 }
 article:hover {
   cursor: grab;
@@ -185,8 +224,8 @@ label {
   display: block;
   margin-bottom: 5px;
 }
-input[type="text"],
-input[type="password"] {
+#username,
+#password {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;

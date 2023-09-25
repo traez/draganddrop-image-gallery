@@ -25,6 +25,9 @@ Next.js Next-Auth Authentication Credentials Provider Client Component
 Good Tutorial: https://nextjsdev.com/user-authentication-in-nextjs-13-app-using-nextauth/
 Live: https://nextauth-nextjs13.vercel.app/
 Source: https://github.com/raiv200/NextAuth-Next.js-13
+
+DND kit, working CSS grid drag and drop
+https://codesandbox.io/s/dndkit-grid-with-drag-handle-example-x9w71?file=/src/App.js:801-811
 ----------------------------------------------
 Image Grid
 image search filter (continent)
