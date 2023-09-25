@@ -124,5 +124,8 @@ Solomon Ekrebe and Ekpa Ntan thanks for the guidance.
 
 ## User Instructions
 
-Login details are displayed on landing page.
-Signout functionality not added, so to sign out, on Google Chrome: Right Click -> Application -> Cookies -> Right Click and clear site cookies
+Login details are displayed as placeholder in input Elements.  
+You may also test the HTTP Post request method functionality.  
+When logged in you may filter and reorder images via dragging.  
+Sign out when you're done.  
+Cheers.  
